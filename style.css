@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: gray;
+}
+
+#magicBallContainer {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 0 20px rgb(237, 241, 241);
+}
+
+#header {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#magicBall {
+    width: 235px;
+    height: 233px;
+    border-radius: 50%;
+    background-image: url(ball.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(24, 48, 48);
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+#questionInput {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 210px;
+    font-size: 16px;
+}
+
+#submitButton {
+    margin-top: 10px;
+    padding-top: 4px;
+    padding-bottom: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: #313634;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    height: 25px;
+    width: 75px;
+}
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
